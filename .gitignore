@@ -53,8 +53,18 @@
 !*.tbd
 !*.sof
 ## tbd
-
+!/SistemaEmbarcadoAcumulador
 !*.tcl
+!*.mif
+*.bak
+!*.c
+!*.h
+!*.cpp
+!*.hpp
+!*.qsys
+!*.sopcinfo
+!*.csv
+!*.spd
 
 # End of https://www.toptal.com/developers/gitignore/api/alteraquartusii
 
