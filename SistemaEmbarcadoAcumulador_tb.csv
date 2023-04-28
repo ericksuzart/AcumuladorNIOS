@@ -1,12 +1,12 @@
-# system info SistemaEmbarcadoAcumulador_tb on 2023.04.21.20:51:45
+# system info SistemaEmbarcadoAcumulador_tb on 2023.04.27.21:15:37
 system_info:
 name,value
 DEVICE,EP4CE115F29C7
 DEVICE_FAMILY,Cyclone IV E
-GENERATION_ID,1682121078
+GENERATION_ID,1682640914
 #
 #
-# Files generated for SistemaEmbarcadoAcumulador_tb on 2023.04.21.20:51:45
+# Files generated for SistemaEmbarcadoAcumulador_tb on 2023.04.27.21:15:37
 files:
 filepath,kind,attributes,module,is_top
 SistemaEmbarcadoAcumulador/testbench/SistemaEmbarcadoAcumulador_tb/simulation/SistemaEmbarcadoAcumulador_tb.v,VERILOG,,SistemaEmbarcadoAcumulador_tb,true

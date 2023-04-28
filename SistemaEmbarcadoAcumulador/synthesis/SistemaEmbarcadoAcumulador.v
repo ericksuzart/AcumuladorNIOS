@@ -54,6 +54,7 @@ module SistemaEmbarcadoAcumulador (
 	wire         mm_interconnect_0_memoriadeprograma_s1_clken;              // mm_interconnect_0:MemoriaDePrograma_s1_clken -> MemoriaDePrograma:clken
 	wire         mm_interconnect_0_memoriadedados_s1_chipselect;            // mm_interconnect_0:MemoriaDeDados_s1_chipselect -> MemoriaDeDados:chipselect
 	wire  [31:0] mm_interconnect_0_memoriadedados_s1_readdata;              // MemoriaDeDados:readdata -> mm_interconnect_0:MemoriaDeDados_s1_readdata
+	wire         mm_interconnect_0_memoriadedados_s1_debugaccess;           // mm_interconnect_0:MemoriaDeDados_s1_debugaccess -> MemoriaDeDados:debugaccess
 	wire  [13:0] mm_interconnect_0_memoriadedados_s1_address;               // mm_interconnect_0:MemoriaDeDados_s1_address -> MemoriaDeDados:address
 	wire   [3:0] mm_interconnect_0_memoriadedados_s1_byteenable;            // mm_interconnect_0:MemoriaDeDados_s1_byteenable -> MemoriaDeDados:byteenable
 	wire         mm_interconnect_0_memoriadedados_s1_write;                 // mm_interconnect_0:MemoriaDeDados_s1_write -> MemoriaDeDados:write
@@ -87,17 +88,18 @@ module SistemaEmbarcadoAcumulador (
 	);
 
 	SistemaEmbarcadoAcumulador_MemoriaDeDados memoriadedados (
-		.clk        (clk_clk),                                        //   clk1.clk
-		.address    (mm_interconnect_0_memoriadedados_s1_address),    //     s1.address
-		.clken      (mm_interconnect_0_memoriadedados_s1_clken),      //       .clken
-		.chipselect (mm_interconnect_0_memoriadedados_s1_chipselect), //       .chipselect
-		.write      (mm_interconnect_0_memoriadedados_s1_write),      //       .write
-		.readdata   (mm_interconnect_0_memoriadedados_s1_readdata),   //       .readdata
-		.writedata  (mm_interconnect_0_memoriadedados_s1_writedata),  //       .writedata
-		.byteenable (mm_interconnect_0_memoriadedados_s1_byteenable), //       .byteenable
-		.reset      (rst_controller_reset_out_reset),                 // reset1.reset
-		.reset_req  (rst_controller_reset_out_reset_req),             //       .reset_req
-		.freeze     (1'b0)                                            // (terminated)
+		.clk         (clk_clk),                                         //   clk1.clk
+		.address     (mm_interconnect_0_memoriadedados_s1_address),     //     s1.address
+		.debugaccess (mm_interconnect_0_memoriadedados_s1_debugaccess), //       .debugaccess
+		.clken       (mm_interconnect_0_memoriadedados_s1_clken),       //       .clken
+		.chipselect  (mm_interconnect_0_memoriadedados_s1_chipselect),  //       .chipselect
+		.write       (mm_interconnect_0_memoriadedados_s1_write),       //       .write
+		.readdata    (mm_interconnect_0_memoriadedados_s1_readdata),    //       .readdata
+		.writedata   (mm_interconnect_0_memoriadedados_s1_writedata),   //       .writedata
+		.byteenable  (mm_interconnect_0_memoriadedados_s1_byteenable),  //       .byteenable
+		.reset       (rst_controller_reset_out_reset),                  // reset1.reset
+		.reset_req   (rst_controller_reset_out_reset_req),              //       .reset_req
+		.freeze      (1'b0)                                             // (terminated)
 	);
 
 	SistemaEmbarcadoAcumulador_MemoriaDePrograma memoriadeprograma (
@@ -194,6 +196,7 @@ module SistemaEmbarcadoAcumulador (
 		.MemoriaDeDados_s1_byteenable                     (mm_interconnect_0_memoriadedados_s1_byteenable),            //                                           .byteenable
 		.MemoriaDeDados_s1_chipselect                     (mm_interconnect_0_memoriadedados_s1_chipselect),            //                                           .chipselect
 		.MemoriaDeDados_s1_clken                          (mm_interconnect_0_memoriadedados_s1_clken),                 //                                           .clken
+		.MemoriaDeDados_s1_debugaccess                    (mm_interconnect_0_memoriadedados_s1_debugaccess),           //                                           .debugaccess
 		.MemoriaDePrograma_s1_address                     (mm_interconnect_0_memoriadeprograma_s1_address),            //                       MemoriaDePrograma_s1.address
 		.MemoriaDePrograma_s1_write                       (mm_interconnect_0_memoriadeprograma_s1_write),              //                                           .write
 		.MemoriaDePrograma_s1_readdata                    (mm_interconnect_0_memoriadeprograma_s1_readdata),           //                                           .readdata

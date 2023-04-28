@@ -25,6 +25,7 @@ module SistemaEmbarcadoAcumulador_MemoriaDeDados (
                                                     chipselect,
                                                     clk,
                                                     clken,
+                                                    debugaccess,
                                                     freeze,
                                                     reset,
                                                     reset_req,
@@ -45,6 +46,7 @@ module SistemaEmbarcadoAcumulador_MemoriaDeDados (
   input            chipselect;
   input            clk;
   input            clken;
+  input            debugaccess;
   input            freeze;
   input            reset;
   input            reset_req;
@@ -55,7 +57,7 @@ module SistemaEmbarcadoAcumulador_MemoriaDeDados (
 wire             clocken0;
 wire    [ 31: 0] readdata;
 wire             wren;
-  assign wren = chipselect & write;
+  assign wren = chipselect & write & debugaccess;
   assign clocken0 = clken & ~reset_req;
   altsyncram the_altsyncram
     (
@@ -70,6 +72,7 @@ wire             wren;
 
   defparam the_altsyncram.byte_size = 8,
            the_altsyncram.init_file = INIT_FILE,
+           the_altsyncram.lpm_hint = "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=NONE",
            the_altsyncram.lpm_type = "altsyncram",
            the_altsyncram.maximum_depth = 16384,
            the_altsyncram.numwords_a = 16384,

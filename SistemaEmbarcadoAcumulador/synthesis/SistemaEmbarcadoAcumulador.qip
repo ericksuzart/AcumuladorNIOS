@@ -2,7 +2,7 @@ set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmba
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "SistemaEmbarcadoAcumulador" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../SistemaEmbarcadoAcumulador.sopcinfo"]
-set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name SLD_INFO "QSYS_NAME SistemaEmbarcadoAcumulador HAS_SOPCINFO 1 GENERATION_ID 1682121169"
+set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name SLD_INFO "QSYS_NAME SistemaEmbarcadoAcumulador HAS_SOPCINFO 1 GENERATION_ID 1682639443"
 set_global_assignment -library "SistemaEmbarcadoAcumulador" -name MISC_FILE [file join $::quartus(qip_path) "../SistemaEmbarcadoAcumulador.cmp"]
 set_global_assignment -library "SistemaEmbarcadoAcumulador" -name SLD_FILE [file join $::quartus(qip_path) "SistemaEmbarcadoAcumulador.regmap"]
 set_global_assignment -library "SistemaEmbarcadoAcumulador" -name SLD_FILE [file join $::quartus(qip_path) "SistemaEmbarcadoAcumulador.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmba
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY4MjEyMTE2OQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY4MjYzOTQ0Mw==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0UxMTVGMjlDNw==::QXV0byBERVZJQ0U="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -988,7 +988,7 @@ set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -libra
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_VERSION "MTguMQ=="
-set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "YWxsb3dJblN5c3RlbU1lbW9yeUNvbnRlbnRFZGl0b3I=::ZmFsc2U=::RW5hYmxlIEluLVN5c3RlbSBNZW1vcnkgQ29udGVudCBFZGl0b3IgZmVhdHVyZQ=="
+set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "YWxsb3dJblN5c3RlbU1lbW9yeUNvbnRlbnRFZGl0b3I=::dHJ1ZQ==::RW5hYmxlIEluLVN5c3RlbSBNZW1vcnkgQ29udGVudCBFZGl0b3IgZmVhdHVyZQ=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "YmxvY2tUeXBl::QVVUTw==::QmxvY2sgdHlwZQ=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "ZGF0YVdpZHRo::MzI=::U2xhdmUgUzEgRGF0YSB3aWR0aA=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "ZGF0YVdpZHRoMg==::MzI=::U2xhdmUgUzIgRGF0YSB3aWR0aA=="
@@ -997,6 +997,7 @@ set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -libra
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "aW5pdE1lbUNvbnRlbnQ=::dHJ1ZQ==::SW5pdGlhbGl6ZSBtZW1vcnkgY29udGVudA=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "aW5pdGlhbGl6YXRpb25GaWxlTmFtZQ==::L2hvbWUvZXJpY2svU3luYy9VRkJBL0VOR0c1Mi1MYWJfMS9Qcm9qZXRvcy9RdWFydHVzL0FjdW11bGFkb3JOSU9TL0RhZG9zRGFNZW1vcmlhLm1pZg==::VXNlciBjcmVhdGVkIGluaXRpYWxpemF0aW9uIGZpbGU="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "ZW5QUkluaXRNb2Rl::ZmFsc2U=::RW5hYmxlIFBhcnRpYWwgUmVjb25maWd1cmF0aW9uIEluaXRpYWxpemF0aW9uIE1vZGU="
+set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "aW5zdGFuY2VJRA==::Tk9ORQ==::SW5zdGFuY2UgSUQ="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "bWVtb3J5U2l6ZQ==::NjU1MzY=::VG90YWwgbWVtb3J5IHNpemU="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "c2ltQWxsb3dNUkFNQ29udGVudHNGaWxl::ZmFsc2U=::QWxsb3cgTVJBTSBjb250ZW50cyBmaWxlIGZvciBzaW11bGF0aW9u"
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "c2ltTWVtSW5pdE9ubHlGaWxlbmFtZQ==::MA==::U2ltdWxhdGlvbiBtZW1pbml0IG9ubHkgaGFzIGZpbGVuYW1l"
@@ -1004,7 +1005,7 @@ set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -libra
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "c2xhdmUxTGF0ZW5jeQ==::MQ==::U2xhdmUgczEgTGF0ZW5jeQ=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "dXNlTm9uRGVmYXVsdEluaXRGaWxl::dHJ1ZQ==::RW5hYmxlIG5vbi1kZWZhdWx0IGluaXRpYWxpemF0aW9uIGZpbGU="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "Y29weUluaXRGaWxl::ZmFsc2U=::Q29weSBub24tZGVmYXVsdCBpbml0aWFsaXphdGlvbiBmaWxlIHRvIGdlbmVyYXRlZCBmb2xkZXI="
-set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "d3JpdGFibGU=::dHJ1ZQ==::VHlwZQ=="
+set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "d3JpdGFibGU=::ZmFsc2U=::VHlwZQ=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "ZWNjX2VuYWJsZWQ=::ZmFsc2U=::RXh0ZW5kIHRoZSBkYXRhIHdpZHRoIHRvIHN1cHBvcnQgRUNDIGJpdHM="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "cmVzZXRyZXF1ZXN0X2VuYWJsZWQ=::dHJ1ZQ==::UmVzZXQgUmVxdWVzdA=="
 set_global_assignment -entity "SistemaEmbarcadoAcumulador_MemoriaDeDados" -library "SistemaEmbarcadoAcumulador" -name IP_COMPONENT_PARAMETER "YXV0b0luaXRpYWxpemF0aW9uRmlsZU5hbWU=::U2lzdGVtYUVtYmFyY2Fkb0FjdW11bGFkb3JfTWVtb3JpYURlRGFkb3M=::YXV0b0luaXRpYWxpemF0aW9uRmlsZU5hbWU="

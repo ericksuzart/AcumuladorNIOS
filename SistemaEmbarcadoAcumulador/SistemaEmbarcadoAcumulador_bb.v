@@ -1,12 +1,12 @@
 
 module SistemaEmbarcadoAcumulador (
-	clk_clk,
-	reset_reset_n,
 	acumulador_conduit_readdata,
-	medidordeclock_conduit_readdata);	
+	clk_clk,
+	medidordeclock_conduit_readdata,
+	reset_reset_n);	
 
-	input		clk_clk;
-	input		reset_reset_n;
 	output	[31:0]	acumulador_conduit_readdata;
+	input		clk_clk;
 	output	[31:0]	medidordeclock_conduit_readdata;
+	input		reset_reset_n;
 endmodule

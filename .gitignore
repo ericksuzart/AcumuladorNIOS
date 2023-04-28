@@ -41,6 +41,9 @@
 /*
 !/*.gitignore
 ##
+!/software/
+/software/TesteSoftware_bsp/obj
+!/eclipse_ws/
 !*.qpf
 !*.qsf
 !*.qws
@@ -65,6 +68,5 @@
 !*.sopcinfo
 !*.csv
 !*.spd
-
 # End of https://www.toptal.com/developers/gitignore/api/alteraquartusii
 

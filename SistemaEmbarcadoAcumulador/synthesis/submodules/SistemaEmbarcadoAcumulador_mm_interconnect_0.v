@@ -44,6 +44,7 @@ module SistemaEmbarcadoAcumulador_mm_interconnect_0 (
 		output wire [3:0]  MemoriaDeDados_s1_byteenable,                     //                                           .byteenable
 		output wire        MemoriaDeDados_s1_chipselect,                     //                                           .chipselect
 		output wire        MemoriaDeDados_s1_clken,                          //                                           .clken
+		output wire        MemoriaDeDados_s1_debugaccess,                    //                                           .debugaccess
 		output wire [13:0] MemoriaDePrograma_s1_address,                     //                       MemoriaDePrograma_s1.address
 		output wire        MemoriaDePrograma_s1_write,                       //                                           .write
 		input  wire [31:0] MemoriaDePrograma_s1_readdata,                    //                                           .readdata
@@ -1092,6 +1093,7 @@ module SistemaEmbarcadoAcumulador_mm_interconnect_0 (
 		.av_byteenable          (MemoriaDeDados_s1_byteenable),                  //                         .byteenable
 		.av_chipselect          (MemoriaDeDados_s1_chipselect),                  //                         .chipselect
 		.av_clken               (MemoriaDeDados_s1_clken),                       //                         .clken
+		.av_debugaccess         (MemoriaDeDados_s1_debugaccess),                 //                         .debugaccess
 		.av_read                (),                                              //              (terminated)
 		.av_begintransfer       (),                                              //              (terminated)
 		.av_beginbursttransfer  (),                                              //              (terminated)
@@ -1101,7 +1103,6 @@ module SistemaEmbarcadoAcumulador_mm_interconnect_0 (
 		.av_writebyteenable     (),                                              //              (terminated)
 		.av_lock                (),                                              //              (terminated)
 		.uav_clken              (1'b0),                                          //              (terminated)
-		.av_debugaccess         (),                                              //              (terminated)
 		.av_outputenable        (),                                              //              (terminated)
 		.uav_response           (),                                              //              (terminated)
 		.av_response            (2'b00),                                         //              (terminated)
