@@ -42,6 +42,7 @@
 !/*.gitignore
 ##
 !/software/
+!/software/TesteSoftware/obj
 /software/TesteSoftware_bsp/obj
 !/eclipse_ws/
 !*.qpf
